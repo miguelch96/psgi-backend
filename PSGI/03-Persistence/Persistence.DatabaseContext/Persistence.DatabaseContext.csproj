@@ -78,6 +78,18 @@
     <Compile Include="Migrations\201712300114133_TerrArZonSecGrupo.Designer.cs">
       <DependentUpon>201712300114133_TerrArZonSecGrupo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712300132427_MiembroV3.cs" />
+    <Compile Include="Migrations\201712300132427_MiembroV3.Designer.cs">
+      <DependentUpon>201712300132427_MiembroV3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712300148259_Examenes.cs" />
+    <Compile Include="Migrations\201712300148259_Examenes.Designer.cs">
+      <DependentUpon>201712300148259_Examenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712300150218_MiembroV3.1.cs" />
+    <Compile Include="Migrations\201712300150218_MiembroV3.1.Designer.cs">
+      <DependentUpon>201712300150218_MiembroV3.1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -106,6 +118,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712300114133_TerrArZonSecGrupo.resx">
       <DependentUpon>201712300114133_TerrArZonSecGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712300132427_MiembroV3.resx">
+      <DependentUpon>201712300132427_MiembroV3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712300148259_Examenes.resx">
+      <DependentUpon>201712300148259_Examenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712300150218_MiembroV3.1.resx">
+      <DependentUpon>201712300150218_MiembroV3.1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -19,11 +19,34 @@ namespace Common
             Disable
         }
 
+        public enum Sexo
+        {
+            Masculino,
+            Femenino
+        }
+
         public enum Estado
         {
             Activo,
             Inactivo,
             Inubicable
+        }
+
+        public enum TipoDocumento
+        {
+            Dni,
+            CarnetExtranjeria,
+            Ruc,
+            Cedula,
+            Pasaporte
+        }
+
+        public enum TipoMiembro
+        {
+            Miembro,
+            Titular,
+            AmigoSoka,
+            NoMiembro
         }
 
         public enum MyFilters

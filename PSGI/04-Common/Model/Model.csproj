@@ -70,6 +70,8 @@
     <Compile Include="Custom\UserForGridView.cs" />
     <Compile Include="Domain\Area.cs" />
     <Compile Include="Domain\Course.cs" />
+    <Compile Include="Domain\Examen.cs" />
+    <Compile Include="Domain\ExamenMiembro.cs" />
     <Compile Include="Domain\Grupo.cs" />
     <Compile Include="Domain\Miembro.cs" />
     <Compile Include="Domain\Sector.cs" />

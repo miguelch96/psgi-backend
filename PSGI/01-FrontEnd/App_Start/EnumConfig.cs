@@ -21,9 +21,9 @@ namespace FrontEnd.App_Start
                 {
                     childs += c.Name + ": {";
 
-                    childs += string.Format("name: '{0}',", c.Name);
-                    childs += string.Format("description: '{0}',", c.Description);
-                    childs += string.Format("value: {0}", c.Value);
+                    childs += $"name: '{c.Name}',";
+                    childs += $"description: '{c.Description}',";
+                    childs += $"value: {c.Value}";
 
                     childs += "},";
                 }

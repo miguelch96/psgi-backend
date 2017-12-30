@@ -27,7 +27,8 @@ namespace Persistence.DatabaseContext
         public virtual DbSet<Area> Area { get; set; }
         public virtual DbSet<Zona> Zona { get; set; }
         public virtual DbSet<Sector> Sector { get; set; }
-        public virtual DbSet<Grupo> Grupo { get; set; }
+        public virtual DbSet<Examen> Examen { get; set; }
+        public virtual DbSet<ExamenMiembro> ExamenMiembro { get; set; }
        
 
         public ApplicationDbContext()
