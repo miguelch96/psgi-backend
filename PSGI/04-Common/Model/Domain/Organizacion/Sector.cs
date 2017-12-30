@@ -7,6 +7,7 @@ namespace Model.Domain.Organizacion
     {
         public int SectorId { get; set; }
         public int Nombre { get; set; }
+        public int ZonaId { get; set; }
         public Zona Zona { get; set; }
         public bool Deleted { get; set; }
     }

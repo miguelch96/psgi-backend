@@ -2,8 +2,10 @@
 using Model.Auth;
 using Model.Domain;
 using Model.Domain.Estatico;
+using Model.Domain.Organizacion;
 using Persistence.DbContextScope;
 using Persistence.Repository;
+using Service.OrganizacionServices;
 
 namespace Service.Config
 {
@@ -26,6 +28,11 @@ namespace Service.Config
             container.Register<IRepository<Division>>((x) => new Repository<Division>(ambientDbContextLocator));
             container.Register<IRepository<TipoMiembro>>((x) => new Repository<TipoMiembro>(ambientDbContextLocator));
             container.Register<IRepository<Estado>>((x) => new Repository<Estado>(ambientDbContextLocator));
+            container.Register<IRepository<Territorio>>((x) => new Repository<Territorio>(ambientDbContextLocator));
+            container.Register<IRepository<Area>>((x) => new Repository<Area>(ambientDbContextLocator));
+            container.Register<IRepository<Zona>>((x) => new Repository<Zona>(ambientDbContextLocator));
+            container.Register<IRepository<Sector>>((x) => new Repository<Sector>(ambientDbContextLocator));
+            container.Register<IRepository<Grupo>>((x) => new Repository<Grupo>(ambientDbContextLocator));
 
             container.Register<IStudentService, StudentService>();
             container.Register<IStudentPerCourseService, StudentPerCourseService>();
@@ -36,6 +43,11 @@ namespace Service.Config
             container.Register<IDivisionService, DivisionService>();
             container.Register<ITipoMiembroService, TipoMiembroService>();
             container.Register<IEstadoService, EstadoService>();
+            container.Register<ITerritorioService, TerritorioService>();
+            container.Register<IAreaService, AreaService>();
+            container.Register<IZonaService, ZonaService>();
+            container.Register<ISectorService, SectorService>();
+            container.Register<IGrupoService, GrupoService>();
         }
     }
 }
