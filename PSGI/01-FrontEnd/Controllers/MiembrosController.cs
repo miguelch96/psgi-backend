@@ -22,7 +22,7 @@ namespace FrontEnd.Controllers
         // GET: Miembro
         public ActionResult New()
         {
-            return View();
+            return View(new Miembro());
         }
 
         // GET: Miembro

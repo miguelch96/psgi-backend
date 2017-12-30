@@ -17,6 +17,7 @@ namespace Service
         Miembro Get(int id);
         ResponseHelper InsertOrUpdate(Miembro model);
         ResponseHelper Delete(int id);
+
     }
     public class MiembroService : IMiembroService
     {

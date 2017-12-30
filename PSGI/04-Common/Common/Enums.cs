@@ -25,30 +25,6 @@ namespace Common
             Femenino
         }
 
-        public enum Estado
-        {
-            Activo,
-            Inactivo,
-            Inubicable
-        }
-
-        public enum TipoDocumento
-        {
-            Dni,
-            CarnetExtranjeria,
-            Ruc,
-            Cedula,
-            Pasaporte
-        }
-
-        public enum TipoMiembro
-        {
-            Miembro,
-            Titular,
-            AmigoSoka,
-            NoMiembro
-        }
-
         public enum MyFilters
         {
             IsDeleted

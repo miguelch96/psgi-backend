@@ -13,9 +13,10 @@ namespace Model.Domain
         public int MiembroId { get; set; }
         public Miembro Miembro { get; set; }
         public int ExamenId { get; set; }
-        public int GradoObtenidoId { get; set; }
+        public int? GradoObtenidoId { get; set; }
         public Grado GradoObtenido { get; set; }
-        public bool Aprobado { get; set; }
+        public bool Asistio { get; set; } = false;
+        public bool Aprobado { get; set; } = false;
         public Examen Examen { get; set; }
     }
 }

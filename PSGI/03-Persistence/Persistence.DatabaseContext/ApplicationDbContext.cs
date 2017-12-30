@@ -10,6 +10,7 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 using EntityFramework.DynamicFilters;
 using Common.CustomFilters;
 using Model.Auth;
+using Model.Domain.Estatico;
 
 namespace Persistence.DatabaseContext
 {
@@ -27,8 +28,13 @@ namespace Persistence.DatabaseContext
         public virtual DbSet<Area> Area { get; set; }
         public virtual DbSet<Zona> Zona { get; set; }
         public virtual DbSet<Sector> Sector { get; set; }
+        public virtual DbSet<Grupo> Grupo { get; set; }
         public virtual DbSet<Examen> Examen { get; set; }
         public virtual DbSet<ExamenMiembro> ExamenMiembro { get; set; }
+        public virtual DbSet<Grado> Grado { get; set; }
+        public virtual DbSet<Estado> Estado { get; set; }
+        public virtual DbSet<TipoDocumento> TipoDocumento { get; set; }
+        public virtual DbSet<TipoMiembro> TipoMiembro { get; set; }
        
 
         public ApplicationDbContext()

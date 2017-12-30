@@ -10,7 +10,7 @@ namespace Model.Domain
 {
     public class Grado : AuditEntity,ISoftDeleted
     {
-        public int GradoId { get; set; }
+        public byte GradoId { get; set; }
         public String Nombre { get; set; }
         public bool Deleted { get; set; }
     }

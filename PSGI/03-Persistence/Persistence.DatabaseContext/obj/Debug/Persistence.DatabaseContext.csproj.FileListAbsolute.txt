@@ -30,3 +30,6 @@ C:\Users\User\Documents\Visual Studio 2017\Projects\psgi-web\PSGI\03-Persistence
 C:\Users\User\Documents\Visual Studio 2017\Projects\psgi-web\PSGI\03-Persistence\Persistence.DatabaseContext\obj\Debug\Persistence.DatabaseContext.Migrations.MiembroV3.resources
 C:\Users\User\Documents\Visual Studio 2017\Projects\psgi-web\PSGI\03-Persistence\Persistence.DatabaseContext\obj\Debug\Persistence.DatabaseContext.Migrations.Examenes.resources
 C:\Users\User\Documents\Visual Studio 2017\Projects\psgi-web\PSGI\03-Persistence\Persistence.DatabaseContext\obj\Debug\Persistence.DatabaseContext.Migrations.MiembroV31.resources
+C:\Users\User\Documents\Visual Studio 2017\Projects\psgi-web\PSGI\03-Persistence\Persistence.DatabaseContext\obj\Debug\Persistence.DatabaseContext.Migrations.ExamenMiembroV11.resources
+C:\Users\User\Documents\Visual Studio 2017\Projects\psgi-web\PSGI\03-Persistence\Persistence.DatabaseContext\obj\Debug\Persistence.DatabaseContext.Migrations.ExamenMiembroV1.resources
+C:\Users\User\Documents\Visual Studio 2017\Projects\psgi-web\PSGI\03-Persistence\Persistence.DatabaseContext\obj\Debug\Persistence.DatabaseContext.Migrations.MiembroV4.resources
