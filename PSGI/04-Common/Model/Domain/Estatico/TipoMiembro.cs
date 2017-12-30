@@ -4,7 +4,7 @@ namespace Model.Domain.Estatico
 {
     public class TipoMiembro
     {
-        public byte TipoMiembroId { get; set; }
+        public int TipoMiembroId { get; set; }
         public String Nombre { get; set; }
     }
 }

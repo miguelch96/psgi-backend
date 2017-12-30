@@ -11,6 +11,8 @@ using EntityFramework.DynamicFilters;
 using Common.CustomFilters;
 using Model.Auth;
 using Model.Domain.Estatico;
+using Model.Domain.Examen;
+using Model.Domain.Organizacion;
 
 namespace Persistence.DatabaseContext
 {
@@ -35,6 +37,7 @@ namespace Persistence.DatabaseContext
         public virtual DbSet<Estado> Estado { get; set; }
         public virtual DbSet<TipoDocumento> TipoDocumento { get; set; }
         public virtual DbSet<TipoMiembro> TipoMiembro { get; set; }
+        public virtual DbSet<Division> Division { get; set; }
        
 
         public ApplicationDbContext()

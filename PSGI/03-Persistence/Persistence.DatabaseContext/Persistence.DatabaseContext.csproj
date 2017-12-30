@@ -66,41 +66,33 @@
     <Compile Include="Migrations\201706302208467_Initialize.Designer.cs">
       <DependentUpon>201706302208467_Initialize.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712290520296_MiembroV1.cs" />
-    <Compile Include="Migrations\201712290520296_MiembroV1.Designer.cs">
-      <DependentUpon>201712290520296_MiembroV1.cs</DependentUpon>
+    <Compile Include="Migrations\201712301733438_EstaticoExamenMiembroV1.cs" />
+    <Compile Include="Migrations\201712301733438_EstaticoExamenMiembroV1.Designer.cs">
+      <DependentUpon>201712301733438_EstaticoExamenMiembroV1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712290523051_MiembroV2.cs" />
-    <Compile Include="Migrations\201712290523051_MiembroV2.Designer.cs">
-      <DependentUpon>201712290523051_MiembroV2.cs</DependentUpon>
+    <Compile Include="Migrations\201712301741101_DivisionIdINT.cs" />
+    <Compile Include="Migrations\201712301741101_DivisionIdINT.Designer.cs">
+      <DependentUpon>201712301741101_DivisionIdINT.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712300114133_TerrArZonSecGrupo.cs" />
-    <Compile Include="Migrations\201712300114133_TerrArZonSecGrupo.Designer.cs">
-      <DependentUpon>201712300114133_TerrArZonSecGrupo.cs</DependentUpon>
+    <Compile Include="Migrations\201712301747327_V1.1.cs" />
+    <Compile Include="Migrations\201712301747327_V1.1.Designer.cs">
+      <DependentUpon>201712301747327_V1.1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712300132427_MiembroV3.cs" />
-    <Compile Include="Migrations\201712300132427_MiembroV3.Designer.cs">
-      <DependentUpon>201712300132427_MiembroV3.cs</DependentUpon>
+    <Compile Include="Migrations\201712301751578_V1.1.1.cs" />
+    <Compile Include="Migrations\201712301751578_V1.1.1.Designer.cs">
+      <DependentUpon>201712301751578_V1.1.1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712300148259_Examenes.cs" />
-    <Compile Include="Migrations\201712300148259_Examenes.Designer.cs">
-      <DependentUpon>201712300148259_Examenes.cs</DependentUpon>
+    <Compile Include="Migrations\201712301753113_V1.1.2.cs" />
+    <Compile Include="Migrations\201712301753113_V1.1.2.Designer.cs">
+      <DependentUpon>201712301753113_V1.1.2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712300150218_MiembroV3.1.cs" />
-    <Compile Include="Migrations\201712300150218_MiembroV3.1.Designer.cs">
-      <DependentUpon>201712300150218_MiembroV3.1.cs</DependentUpon>
+    <Compile Include="Migrations\201712301753526_V1.1.3.cs" />
+    <Compile Include="Migrations\201712301753526_V1.1.3.Designer.cs">
+      <DependentUpon>201712301753526_V1.1.3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712300300493_ExamenMiembroV1.1.cs" />
-    <Compile Include="Migrations\201712300300493_ExamenMiembroV1.1.Designer.cs">
-      <DependentUpon>201712300300493_ExamenMiembroV1.1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712300411501_ExamenMiembroV1.cs" />
-    <Compile Include="Migrations\201712300411501_ExamenMiembroV1.Designer.cs">
-      <DependentUpon>201712300411501_ExamenMiembroV1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712300455048_MiembroV4.cs" />
-    <Compile Include="Migrations\201712300455048_MiembroV4.Designer.cs">
-      <DependentUpon>201712300455048_MiembroV4.cs</DependentUpon>
+    <Compile Include="Migrations\201712301913505_V1.1.4.cs" />
+    <Compile Include="Migrations\201712301913505_V1.1.4.Designer.cs">
+      <DependentUpon>201712301913505_V1.1.4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -122,32 +114,26 @@
     <EmbeddedResource Include="Migrations\201706302208467_Initialize.resx">
       <DependentUpon>201706302208467_Initialize.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712290520296_MiembroV1.resx">
-      <DependentUpon>201712290520296_MiembroV1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712301733438_EstaticoExamenMiembroV1.resx">
+      <DependentUpon>201712301733438_EstaticoExamenMiembroV1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712290523051_MiembroV2.resx">
-      <DependentUpon>201712290523051_MiembroV2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712301741101_DivisionIdINT.resx">
+      <DependentUpon>201712301741101_DivisionIdINT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712300114133_TerrArZonSecGrupo.resx">
-      <DependentUpon>201712300114133_TerrArZonSecGrupo.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712301747327_V1.1.resx">
+      <DependentUpon>201712301747327_V1.1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712300132427_MiembroV3.resx">
-      <DependentUpon>201712300132427_MiembroV3.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712301751578_V1.1.1.resx">
+      <DependentUpon>201712301751578_V1.1.1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712300148259_Examenes.resx">
-      <DependentUpon>201712300148259_Examenes.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712301753113_V1.1.2.resx">
+      <DependentUpon>201712301753113_V1.1.2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712300150218_MiembroV3.1.resx">
-      <DependentUpon>201712300150218_MiembroV3.1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712301753526_V1.1.3.resx">
+      <DependentUpon>201712301753526_V1.1.3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712300300493_ExamenMiembroV1.1.resx">
-      <DependentUpon>201712300300493_ExamenMiembroV1.1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712300411501_ExamenMiembroV1.resx">
-      <DependentUpon>201712300411501_ExamenMiembroV1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712300455048_MiembroV4.resx">
-      <DependentUpon>201712300455048_MiembroV4.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712301913505_V1.1.4.resx">
+      <DependentUpon>201712301913505_V1.1.4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

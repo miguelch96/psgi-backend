@@ -1,49 +1,79 @@
-﻿@model Miembro
+﻿@model FrontEnd.ViewModels.VMMiembro.AddEditMiembroViewModel
 @{
     ViewBag.Title = "New";
 }
 
 <h2>New</h2>
 
-@using (Html.BeginForm("Create", "Miembros", FormMethod.Post,new { @class = "form-horizontal", role = "form" }))
+@using (Html.BeginForm("Create", "Miembros", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
-    @Html.HiddenFor(m => m.MiembroId)
+    @Html.HiddenFor(m => m.Miembro.MiembroId)
     @Html.ValidationSummary("", new { @class = "text-danger" })
     <div class="form-group">
-        @Html.LabelFor(m => m.Nombres, new { @class = "col-md-2 control-label" })
+        @Html.LabelFor(m => m.Miembro.Nombres, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.TextBoxFor(m => m.Apellidos, new { @class = "form-control" })
+            @Html.TextBoxFor(m => m.Miembro.Nombres, new { @class = "form-control" })
         </div>
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.Sexo, new { @class = "col-md-2 control-label" })
+        @Html.LabelFor(m => m.Miembro.Apellidos, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Miembro.Apellidos, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Miembro.Sexo, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
             <select name="Gender" class="form-control">
-                <option @(Enums.Sexo.Femenino == Model.Sexo ? "selected" : "") value="@Enums.Sexo.Femenino">Femenino</option>
-                <option @(Enums.Sexo.Masculino == Model.Sexo ? "selected" : "") value="@Enums.Sexo.Masculino">Masculino</option>
-            </select>
-        </div>
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(m => m.FechaNacimiento, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            <input class="form-control" type="text" name="Birthday" value="@(Model.FechaNacimiento == DateTime.MinValue ? "" : Model.FechaNacimiento.ToShortDateString())" />
-        </div>
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(m => m.Estado, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            <select name="Gender" class="form-control">
-                <option @(Enums.Estado.Activo == Model.Estado ? "selected" : "") value="@Enums.Estado.Activo">Activo</option>
-                <option @(Enums.Estado.Inactivo == Model.Estado ? "selected" : "") value="@Enums.Estado.Inactivo">Inactivo</option>
-                <option @(Enums.Estado.Inubicable == Model.Estado ? "selected" : "") value="@Enums.Estado.Inubicable">Inubicable</option>
+                <option @(Enums.Sexo.Femenino == Model.Miembro.Sexo ? "selected" : "") value="@Enums.Sexo.Femenino">Femenino</option>
+                <option @(Enums.Sexo.Masculino == Model.Miembro.Sexo ? "selected" : "") value="@Enums.Sexo.Masculino">Masculino</option>
             </select>
         </div>
     </div>
 
 
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Miembro.FechaNacimiento, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            <input class="form-control" type="text" name="Birthday" value="@(Model.Miembro.FechaNacimiento == DateTime.MinValue ? "" : Model.Miembro.FechaNacimiento.ToShortDateString())" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Miembro.TipoDocumentoId, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(x => x.Miembro.TipoDocumentoId, new SelectList(Model.TiposDocumento, "TipoDocumentoId", "Siglas"), "Seleccione una opcion", new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Miembro.NroDocumento, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Miembro.NroDocumento, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Miembro.TipoMiembroId, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(x => x.Miembro.TipoMiembroId, new SelectList(Model.TiposMiembro, "TipoMiembroId", "Nombre"), "Seleccione una opcion", new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Miembro.EstadoId, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(x => x.Miembro.EstadoId, new SelectList(Model.Estados, "EstadoId", "Nombre"), "Seleccione una opcion", new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Miembro.DivisionId, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(x => x.Miembro.DivisionId, new SelectList(Model.Divisiones, "DivisionId", "Siglas"), "Seleccione una opcion", new { @class = "form-control" })
+        </div>
+    </div>
 
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
@@ -52,8 +82,6 @@
             </button>
         </div>
     </div>
-
-
 
     <button class="btn btn-success" type="submit">Save</button>
 }
