@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Miembro>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table table-responsive">
+    <thead>
+        <tr>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in Model)
+        {
+        <tr>
+            <td>@m.Nombres</td>
+            <td>@m.Apellidos</td>
+            <td><a href="@Url.Action("Deleted","Miembros",new { id = m.MiembroId})">Eliminar</a></td>
+        </tr>
+        }
+    </tbody>
+</table>
