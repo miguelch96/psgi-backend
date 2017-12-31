@@ -83,6 +83,11 @@
     <Compile Include="Domain\Student.cs" />
     <Compile Include="Domain\Organizacion\Territorio.cs" />
     <Compile Include="Domain\Organizacion\Zona.cs" />
+    <Compile Include="Domain\Suscripcion\DetalleSuscripcion.cs" />
+    <Compile Include="Domain\Suscripcion\Producto.cs" />
+    <Compile Include="Domain\Suscripcion\Suscripcion.cs" />
+    <Compile Include="Domain\Suscripcion\TipoProducto.cs" />
+    <Compile Include="Domain\Suscripcion\TipoSuscripcion.cs" />
     <Compile Include="Helper\AuditEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Domain\StudentPerCourse.cs" />

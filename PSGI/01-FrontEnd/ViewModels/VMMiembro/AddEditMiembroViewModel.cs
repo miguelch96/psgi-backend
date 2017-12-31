@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using Model.Domain;
 using Model.Domain.Estatico;
+using Model.Domain.Organizacion;
 
 namespace FrontEnd.ViewModels.VMMiembro
 {
@@ -14,5 +15,6 @@ namespace FrontEnd.ViewModels.VMMiembro
         public IEnumerable<Estado> Estados { get; set; }
         public IEnumerable<TipoDocumento> TiposDocumento { get; set; }
         public IEnumerable<TipoMiembro> TiposMiembro { get; set; }
+        public IEnumerable<Territorio> Territorios { get; set; }
     }
 }

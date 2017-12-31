@@ -48,7 +48,7 @@ namespace Service.OrganizacionServices
             return result;
         }
 
-        public IEnumerable<Area> GetByTerritorio(int terriotorioId)
+        public IEnumerable<Area> GetByTerritorio(int territorioId)
         {
             var result = new List<Area>();
 
@@ -56,7 +56,8 @@ namespace Service.OrganizacionServices
             {
                 using (var ctx = _dbContextScopeFactory.CreateReadOnly())
                 {
-                    result = _areaRepository.GetAll().Where(x=>x.TerritorioId== terriotorioId).ToList();
+                    result = _areaRepository.GetAll().Where(x=>x.TerritorioId== territorioId).ToList();
+                    Console.Write(result);
                 }
             }
             catch (Exception e)

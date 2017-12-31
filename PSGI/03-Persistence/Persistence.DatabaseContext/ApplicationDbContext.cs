@@ -13,6 +13,7 @@ using Model.Auth;
 using Model.Domain.Estatico;
 using Model.Domain.Examen;
 using Model.Domain.Organizacion;
+using Model.Domain.Suscripcion;
 
 namespace Persistence.DatabaseContext
 {
@@ -38,6 +39,11 @@ namespace Persistence.DatabaseContext
         public virtual DbSet<TipoDocumento> TipoDocumento { get; set; }
         public virtual DbSet<TipoMiembro> TipoMiembro { get; set; }
         public virtual DbSet<Division> Division { get; set; }
+        public virtual DbSet<Producto> Producto { get; set; }
+        public virtual DbSet<DetalleSuscripcion> DetalleSuscripcion { get; set; }
+        public virtual DbSet<Suscripcion> Suscripcion { get; set; }
+        public virtual DbSet<TipoProducto> TipoProducto { get; set; }
+        public virtual DbSet<TipoSuscripcion> TipoSuscripcion { get; set; }
        
 
         public ApplicationDbContext()

@@ -31,3 +31,11 @@ C:\Users\User\Documents\Visual Studio 2017\Projects\psgi-web\PSGI\03-Persistence
 C:\Users\User\Documents\Visual Studio 2017\Projects\psgi-web\PSGI\03-Persistence\Persistence.DatabaseContext\obj\Debug\Persistence.DatabaseContext.Migrations.V112.resources
 C:\Users\User\Documents\Visual Studio 2017\Projects\psgi-web\PSGI\03-Persistence\Persistence.DatabaseContext\obj\Debug\Persistence.DatabaseContext.Migrations.V113.resources
 C:\Users\User\Documents\Visual Studio 2017\Projects\psgi-web\PSGI\03-Persistence\Persistence.DatabaseContext\obj\Debug\Persistence.DatabaseContext.Migrations.V114.resources
+C:\Users\User\Documents\Visual Studio 2017\Projects\psgi-web\PSGI\03-Persistence\Persistence.DatabaseContext\obj\Debug\Persistence.DatabaseContext.Migrations.v20.resources
+C:\Users\User\Documents\Visual Studio 2017\Projects\psgi-web\PSGI\03-Persistence\Persistence.DatabaseContext\obj\Debug\Persistence.DatabaseContext.Migrations.v21.resources
+C:\Users\User\Documents\Visual Studio 2017\Projects\psgi-web\PSGI\03-Persistence\Persistence.DatabaseContext\obj\Debug\Persistence.DatabaseContext.Migrations.FixOrganizacion1.resources
+C:\Users\User\Documents\Visual Studio 2017\Projects\psgi-web\PSGI\03-Persistence\Persistence.DatabaseContext\obj\Debug\Persistence.DatabaseContext.Migrations.FixOrganizacion11.resources
+C:\Users\User\Documents\Visual Studio 2017\Projects\psgi-web\PSGI\03-Persistence\Persistence.DatabaseContext\obj\Debug\Persistence.DatabaseContext.Migrations.FixOrganizacion12.resources
+C:\Users\User\Documents\Visual Studio 2017\Projects\psgi-web\PSGI\03-Persistence\Persistence.DatabaseContext\obj\Debug\Persistence.DatabaseContext.Migrations.NroDocUnique.resources
+C:\Users\User\Documents\Visual Studio 2017\Projects\psgi-web\PSGI\03-Persistence\Persistence.DatabaseContext\obj\Debug\Persistence.DatabaseContext.Migrations.NroDocReFixed.resources
+C:\Users\User\Documents\Visual Studio 2017\Projects\psgi-web\PSGI\03-Persistence\Persistence.DatabaseContext\obj\Debug\Persistence.DatabaseContext.Migrations.GradoDefaulPostulante.resources

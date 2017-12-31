@@ -1,14 +1,14 @@
-﻿using Common.CustomFilters;
+﻿using System;
+using Common.CustomFilters;
 using Model.Helper;
 
 namespace Model.Domain.Organizacion
 {
-    public class Sector : AuditEntity, ISoftDeleted
+    public class Sector 
     {
         public int SectorId { get; set; }
-        public int Nombre { get; set; }
+        public String Nombre { get; set; }
         public int ZonaId { get; set; }
         public Zona Zona { get; set; }
-        public bool Deleted { get; set; }
     }
 }

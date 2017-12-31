@@ -172,6 +172,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MiembrosController.cs" />
+    <Compile Include="Controllers\OrganizacionController.cs" />
     <Compile Include="Controllers\RolesController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
@@ -369,6 +370,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\Logs\" />
+    <Folder Include="Controllers\API\" />
+    <Folder Include="Views\Organizacion\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -538,7 +541,7 @@
     <Content Include="Views\Users\Get.cshtml" />
     <Content Include="Views\Roles\Index.cshtml" />
     <Content Include="Views\Miembros\Index.cshtml" />
-    <Content Include="Views\Miembros\New.cshtml" />
+    <Content Include="Views\Miembros\AddEditMiembro.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\02-Service\Auth.Service\Auth.Service.csproj">

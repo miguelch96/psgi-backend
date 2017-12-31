@@ -1,0 +1,226 @@
+﻿@model FrontEnd.ViewModels.VMMiembro.AddEditMiembroViewModel
+@{
+    ViewBag.Title = "New";
+}
+
+<h2>New</h2>
+
+@using (Html.BeginForm("AddEditMiembro", "Miembros", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.HiddenFor(m => m.Miembro.MiembroId)
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(m => m.Miembro.Nombres, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Miembro.Nombres, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Miembro.Apellidos, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Miembro.Apellidos, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Miembro.Sexo, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            <select name="Gender" class="form-control">
+                <option @(Enums.Sexo.Femenino == Model.Miembro.Sexo ? "selected" : "") value="@Enums.Sexo.Femenino">Femenino</option>
+                <option @(Enums.Sexo.Masculino == Model.Miembro.Sexo ? "selected" : "") value="@Enums.Sexo.Masculino">Masculino</option>
+            </select>
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Miembro.FechaNacimiento, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            <input class="form-control" type="text" name="Birthday" value="@(Model.Miembro.FechaNacimiento == DateTime.MinValue ? "" : Model.Miembro.FechaNacimiento.ToShortDateString())" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Miembro.TipoDocumentoId, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(x => x.Miembro.TipoDocumentoId, new SelectList(Model.TiposDocumento, "TipoDocumentoId", "Siglas"), "Seleccione una opcion", new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Miembro.NroDocumento, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Miembro.NroDocumento, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Miembro.TipoMiembroId, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(x => x.Miembro.TipoMiembroId, new SelectList(Model.TiposMiembro, "TipoMiembroId", "Nombre"), "Seleccione una opcion", new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Miembro.EstadoId, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(x => x.Miembro.EstadoId, new SelectList(Model.Estados, "EstadoId", "Nombre"), "Seleccione una opcion", new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Miembro.DivisionId, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(x => x.Miembro.DivisionId, new SelectList(Model.Divisiones, "DivisionId", "Siglas"), "Seleccione una opcion", new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Territorio", new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            <select class="form-control" id="Territorios" name="Territorios"></select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Area", new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            <select class="form-control" id="Areas" name="Areas"></select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Zona", new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            <select class="form-control" id="Zonas" name="Zonas"></select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Sector", new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            <select class="form-control" id="Sectores" name="Sectores"></select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Grupo", new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            <select class="form-control" data-val="true" id="Miembro_GrupoId" name="Miembro_GrupoId"></select>
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button class="btn btn-default" type="submit">
+                Guardar <i class="fa fa-save"></i>
+            </button>
+        </div>
+    </div>
+
+    <button class="btn btn-success" type="submit">Save</button>
+}
+
+@section scripts {
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(function () {
+                $.getJSON("/Organizacion/Territorios",
+                    function (data) {
+                        var items = "<option>Selecciona Territorio</option>";
+                        $.each(data,
+                            function (i, territorio) {
+                                items += "<option value='" +
+                                    territorio.TerritorioId +
+                                    "'>" +
+                                    territorio.Nombre +
+                                    "</option>";
+                            });
+                        $("#Territorios").html(items);
+                    });
+            });
+
+
+            $("#Territorios").on("change", function () {
+                var territorioId = $("#Territorios>option:selected").val();
+                $('#Areas').prop('selectedIndex', 0);
+                $('#Zonas').prop('selectedIndex', 0);
+                $('#Sectores').prop('selectedIndex', 0);
+                $('#Miembro_GrupoId').prop('selectedIndex', 0);
+                $.getJSON("/Organizacion/Areas/" + territorioId,
+                    function (data) {
+                        var items = "<option>Selecciona Area</option>";
+                        $.each(data,
+                            function (i, area) {
+                                items += "<option value='" +
+                                    area.AreaId +
+                                    "'>" +
+                                    area.Nombre +
+                                    "</option>";
+                            });
+                        $("#Areas").html(items);
+                    });
+            });
+
+            $("#Areas").on("change" , function () {
+                var areaId = $("#Areas>option:selected").val();
+                $('#Zonas').prop('selectedIndex', 0);
+                $('#Sectores').prop('selectedIndex', 0);
+                $('#Miembro_GrupoId').prop('selectedIndex', 0);
+                $.getJSON("/Organizacion/Zonas/" + areaId,
+                    function (data) {
+                        var items = "<option>Selecciona una Zona</option>";
+                        $.each(data,
+                            function (i, zona) {
+                                items += "<option value='" +
+                                    zona.ZonaId +
+                                    "'>" +
+                                    zona.Nombre +
+                                    "</option>";
+                            });
+                        $("#Zonas").html(items);
+                    });
+            });
+
+            $("#Zonas").on("change", function () {
+                var zonaId = $("#Zonas>option:selected").val();
+                $('#Sectores').prop('selectedIndex', 0);
+                $('#Miembro_GrupoId').prop('selectedIndex', 0);
+                $.getJSON("/Organizacion/Sectores/" + zonaId,
+                    function (data) {
+                        var items = "<option>Selecciona un Sector</option>";
+                        $.each(data,
+                            function (i, sector) {
+                                items += "<option value='" +
+                                    sector.SectorId +
+                                    "'>" +
+                                    sector.Nombre +
+                                    "</option>";
+                            });
+                        $("#Sectores").html(items);
+                    });
+            });
+
+            $("#Sectores").on("change", function () {
+                var sectorId = $("#Sectores>option:selected").val();
+                $('#Miembro_GrupoId').prop('selectedIndex', 0);
+
+                $.getJSON("/Organizacion/Grupos/" + sectorId,
+                    function (data) {
+                        var items = "<option>Selecciona un Grupo</option>";
+                        $.each(data,
+                            function (i, grupo) {
+                                items += "<option value='" +
+                                    grupo.GrupoId +
+                                    "'>" +
+                                    grupo.Nombre +
+                                    "</option>";
+                            });
+                        $("#Miembro_GrupoId").html(items);
+                    });
+            });
+        });
+    </script>
+}

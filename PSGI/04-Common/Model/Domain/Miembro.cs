@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -54,11 +55,14 @@ namespace Model.Domain
         public int EstadoId { get; set; }
         public Estado Estado { get; set; }
 
-        public ICollection<ExamenMiembro> Examenes { get; set; }
-
         //GRADO
-        public int? GradoId { get; set; }
+        public int GradoId { get; set; } = 1;
         public Grado Grado { get; set; }
+
+        public ICollection<ExamenMiembro> Examenes { get; set; }
+        public ICollection<Suscripcion.Suscripcion> Suscripciones { get; set; }
+
+       
    
         public bool Deleted { get; set; }
     }

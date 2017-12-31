@@ -94,6 +94,38 @@
     <Compile Include="Migrations\201712301913505_V1.1.4.Designer.cs">
       <DependentUpon>201712301913505_V1.1.4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712310230231_v2.0.cs" />
+    <Compile Include="Migrations\201712310230231_v2.0.Designer.cs">
+      <DependentUpon>201712310230231_v2.0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712310233236_v2.1.cs" />
+    <Compile Include="Migrations\201712310233236_v2.1.Designer.cs">
+      <DependentUpon>201712310233236_v2.1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712310244508_FixOrganizacion1.cs" />
+    <Compile Include="Migrations\201712310244508_FixOrganizacion1.Designer.cs">
+      <DependentUpon>201712310244508_FixOrganizacion1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712310246531_FixOrganizacion1-1.cs" />
+    <Compile Include="Migrations\201712310246531_FixOrganizacion1-1.Designer.cs">
+      <DependentUpon>201712310246531_FixOrganizacion1-1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712310249511_FixOrganizacion1-2.cs" />
+    <Compile Include="Migrations\201712310249511_FixOrganizacion1-2.Designer.cs">
+      <DependentUpon>201712310249511_FixOrganizacion1-2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712311757315_NroDocUnique.cs" />
+    <Compile Include="Migrations\201712311757315_NroDocUnique.Designer.cs">
+      <DependentUpon>201712311757315_NroDocUnique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712311806075_NroDocReFixed.cs" />
+    <Compile Include="Migrations\201712311806075_NroDocReFixed.Designer.cs">
+      <DependentUpon>201712311806075_NroDocReFixed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712311814213_GradoDefaulPostulante.cs" />
+    <Compile Include="Migrations\201712311814213_GradoDefaulPostulante.Designer.cs">
+      <DependentUpon>201712311814213_GradoDefaulPostulante.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -134,6 +166,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712301913505_V1.1.4.resx">
       <DependentUpon>201712301913505_V1.1.4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712310230231_v2.0.resx">
+      <DependentUpon>201712310230231_v2.0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712310233236_v2.1.resx">
+      <DependentUpon>201712310233236_v2.1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712310244508_FixOrganizacion1.resx">
+      <DependentUpon>201712310244508_FixOrganizacion1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712310246531_FixOrganizacion1-1.resx">
+      <DependentUpon>201712310246531_FixOrganizacion1-1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712310249511_FixOrganizacion1-2.resx">
+      <DependentUpon>201712310249511_FixOrganizacion1-2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712311757315_NroDocUnique.resx">
+      <DependentUpon>201712311757315_NroDocUnique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712311806075_NroDocReFixed.resx">
+      <DependentUpon>201712311806075_NroDocReFixed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712311814213_GradoDefaulPostulante.resx">
+      <DependentUpon>201712311814213_GradoDefaulPostulante.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
